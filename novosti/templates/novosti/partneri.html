@@ -1,0 +1,102 @@
+{% extends "novosti/base.html" %}
+{% block navtraka %}
+    {% load static %}
+    <ul class="nav-traka">          
+        <li><a class="meni" href="{% url 'novosti-home' %}">naslovnica</a></li>
+        <li><a class="meni" href="{% url 'novosti-novosti' %}">novosti</a></li>
+        <li><a class="meni" href="{% url 'novosti-oprojektu' %}">o projektu</a></li>
+        <li><a class="active" href="{% url 'novosti-partneri' %}">partneri</a></li>
+        <li><a class="meni" href="{% url 'novosti-kontakt' %}">kontakt</a></li>
+    </ul>
+{% endblock navtraka %}
+{% block content %}
+    {% load static %}
+    <section class="novosti">
+        <header class="novosti-naslov">
+            <h2 class="naslov">Partneri i sponzori...</h2>
+        </header>
+        <div class="kontejner">
+            <div class="kanta1">
+                <div class="kanta-tekst">
+                    <div class="kanta-tekst2">
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS1.jpg' %}">
+                            <p class="esf">Fond: Europski Socijalni Fond <br>
+                                Operativni program: Učinkoviti ljudski potencijali 2014. -
+                                2020. <br>
+                            </p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS3.jpg' %}">
+                            <p class="zeza">Tip natječaja: Otvoreni (trajni) poziv <br>na dostavu projektnih
+                                prijedloga (bespovratna sredstva)</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS5.jpg' %}">
+                            <p class="ministarstvo">Upravljačko tijelo: Ministarstvo rada, <br>
+                                 mirovinskog sustava,
+                                obitelji i socijalne politike</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS7.jpg' %}">
+                            <p class="hzzsplit">Partneri: <br>
+                                Hrvatski zavod za zapošljavanje,<br> regionalni ured Split, <br>
+                                Bihaćka 2/c, 21000 Split <br>
+                                Telefon: 021 / 310-555 <br>
+                                HZZ.Split@hzz.hr</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS9.jpg' %}">
+                            <p class="csssplit">Partneri: <br>
+                                Centar za socijalnu skrb Split <br>
+                                Ivana Gundulića 25 <br>
+                                Split 21000 <br>
+                                Telefon: 021/350-600
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanta2">
+                <div class="kanta-slika">
+                    <div class="kanta-slika2">
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS2.jpg' %}">
+                            <p class="nositelj">Nositelj projekta: <br> Udruga Idemo Dalje, Zagreb</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS4.jpg' %}">
+                            <p class="zazeli">Naziv poziva za dostavu projektnih prijedloga: <br> Zaželi - Program zapošljavanja žena – Faza II, UP.02.1.1.13</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS6.jpg' %}">
+                            <p class="hzz">Posredničko tijelo razine 2: <br> Hrvatski zavod za zapošljavanje,<br>
+                                Ured za financiranje i ugovaranje projekata Europske unije</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS8.jpg' %}">
+                            <p class="hzzsibenik">Partneri: <br>
+                                Hrvatski zavod za zapošljavanje, <br>
+                                područni ured Šibenik <br>
+                                Matije Gupca 42 A, 22000 <br>
+                                Šibenik <br>
+                                T:022/20 11 11 <br>
+                                E: HZZ.Sibenik@hzz.hr
+                            </p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS10.jpg' %}">
+                            <p class="csssibenik">Partneri: <br>
+                                Centar za socijalnu skrb Šibenik <br>
+                                Šibenik, Petra Grubišića 3 <br>
+                                Telefon: 022/201-222 <br>
+                                E-mail:  czss@si.t-com.hr
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

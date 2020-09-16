@@ -1,0 +1,330 @@
+{% extends "novosti/base.html" %}
+{% block navtraka %}
+    {% load static %}
+    <ul class="nav-traka">          
+        <li><a class="active" href="{% url 'novosti-home' %}">naslovnica</a></li>
+        <li><a class="meni" href="{% url 'novosti-novosti' %}">novosti</a></li>
+        <li><a class="meni" href="{% url 'novosti-oprojektu' %}">o projektu</a></li>
+        <li><a class="meni" href="{% url 'novosti-partneri' %}">partneri</a></li>
+        <li><a class="meni" href="{% url 'novosti-kontakt' %}">kontakt</a></li>
+    </ul>
+{% endblock navtraka %}
+{% block content %}
+    {% load static %}
+    <div class="container">
+        <div class="slider">
+            <div class="slide slide1" style="background-image: url({% static 'novosti/images/slide3.jpg' %});">
+                <div class="caption">
+                    <h2>Projekt "ŽeŽa - žene za Zaželi"</h2>
+                    <p>Projekt je sufinancirala Europska unija iz Europskog socijalnog fonda</p>
+                </div>
+            </div>
+
+            <div class="slide slide2" style="background-image: url({% static 'novosti/images/slide5.jpg' %});">
+                <div class="caption">
+                    <h2>PODRUČJE PROVEDBE PROJEKTA:</h2>
+                    <p>Šibensko—kninska županija, Splitsko—dalmatinska županija</p>
+                </div>
+            </div>
+
+            <div class="slide slide3" style="background-image: url({% static 'novosti/images/slide1.jpg' %});">
+                <div class="caption">
+                    <h2>TRAJANJE PROJEKTA:</h2>
+                    <p>Projekt se provodi 18 mjeseci, 18.06.2020—18.12.2021.</p>
+                </div>
+            </div>
+
+            <div class="slide slide4" style="background-image: url({% static 'novosti/images/slide4.jpg' %});">
+                <div class="caption">
+                    <h2>UKUPNA VRIJEDNOST PROJEKTA:</h2>
+                    <p>1.388.400,00 kn</p>
+                </div>
+            </div>
+
+            <div class="slide slide5" style="background-image: url({% static 'novosti/images/slide2.jpg' %});">
+                <div class="caption">
+                    <h2>Iznos EU potpore:</h2>
+                    <p>1.388.400,00 kn</p>
+                </div>
+            </div>
+
+            <div class="slide slide1" style="background-image: url({% static 'novosti/images/slide3.jpg' %});">
+                <div class="caption">
+                    <h2>Projekt "ŽeŽa - žene za Zaželi"</h2>
+                    <p>Projekt je sufinancirala Europska unija iz Europskog socijalnog fonda</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="home">
+        <img src="{% static 'novosti/images/elderly.jpg' %}">
+        <div class="padding">
+            <div class="naslov">
+                <a>O projektu...</a>
+            </div>
+            <div class="tekst">
+                <p>Projekt ŽeŽa provodi se na području ŠKŽ i SDŽ s posebnim naglaskom na ruralna područja šibenskog
+                    zaleđa, općinu Gornju Podstranu, šire područje općine Muč i otok Vis.<br><br> Kroz projekt će se na
+                    navedenim područjima zaposliti ukupno 15 dugotrajno nezaposlenih žena koje će skrbiti o 90 krajnjih
+                    korisnika - starijih i nemoćnih osoba i osoba u nepovoljnom položaju koje žive u vlastitim domovima.<br><br>
+                </p>
+                <p class="doljetekst">
+                    Ciljevi projekta su omogućiti teže zapošljivim ženama ulazak na tržište rada, povećati njihovu
+                    zapošljivost kroz licencirane obrazovne programe i povećati kvalitetu života krajnjih korisnika
+                    sprečavanjem njihove prerane institucionalizacije.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="info">
+        <header class="info-naslov">
+            <h2 class="naslov">Ciljevi i aktivnosti projekta...</h2>
+        </header>
+
+        <div class="kanta">
+
+            <div class="kanta-tekst1">
+                <div class="kanta-tekst2">
+                    <div class="info-tekst">
+                        <div class="podiok">
+                            <h3>OPĆI CILJ PROJEKTA: <br> </h3>
+                            <p>Omogućiti pristup tržištu rada dugotrajno nezaposlenim i teže zapošljivim ženama u ruralnim
+                                područjima Šibensko kninske i Splitsko—dalmatinske županije. <br> <br>
+                            </p>
+                        </div>
+                        <div class="podiok">
+                            <h3>SPECIFIČNI CILJEVI PROJEKTA: <br></h3>
+                            <p>
+                                1. Povećati zapošljivost dugotrajno nezaposlenih žena provođenjem licenciranih obrazovnih programa. <br>
+                                2. Povećati razinu kvalitete života krajnjih korisnika i preventirati njihovu preranu institucionalizaciju i socijalnu isključenost. <br> <br>
+                            </p>
+                        </div>
+                        <div class="podiok">
+                            <h3>CILJANA SKUPINA: <br></h3>
+                            <p>
+                                Projektom će biti obuhvaćeno 15 dugotrajno nezaposlenih žena starijih od 50 godina i/ili žena s
+                                nižom razinom obrazovanja i/ili žena u socijalno depriviranim okolnostima. <br> <br>
+                            </p>
+                        </div>
+                        <div class="podiok">
+                            <h3>KRAJNJI KORISNICI: <br></h3>
+                            <p>    
+                                90 krajnjih korisnika na području Šibensko—kninske i Splitsko—dalmatinske županije: starije i
+                                nemoćne osobe i osobe u nepovoljnom položaju.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanta-projektinfo1">
+                <div class="kanta-projektinfo2">
+                    <div class="projektinfo" style="background-image: url({% static 'novosti/images/slide3.jpg' %});">
+                        <header>Projekt "ŽeŽa - žene za Zaželi"<br></header>
+                        <p>PODRUČJE PROVEDBE PROJEKTA: <br>
+
+                            Šibensko—kninska županija <br>
+                            Splitsko—dalmatinska županija <br>
+                                                       
+                            TRAJANJE PROJEKTA: <br>
+                            
+                            Projekt se provodi 18 mjeseci <br>
+                            18.06.2020—18.12.2021. <br>
+                        
+                            UKUPNA VRIJEDNOST PROJEKTA: <br>
+                         
+                            1.388.400,00 <br>
+                             
+                            Iznos EU potpore: <br>
+                             
+                            1.388.400,00 kn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanta-tekst1">
+                <div class="kanta-tekst2">
+                    <div class="info-tekst">
+                        <h2>AKTIVNOSTI: <br> <br> </h2>
+                        <div class="podiok">
+                            <h4> 1. ZAPOŠLJAVANJE ŽENA PRIPADNICA CILJNE SKUPINE </h4>
+                            <p> u svrhu pružanja usluge potpore i
+                                podrške starijim i nemoćnim osobama i osobama u nepovoljnom položaju <br> <br>
+                            </p>
+                        </div>
+                        <div class="podiok">
+                            <h4>2. PROGRAMI OBRAZOVANJA/OSPOSOBLJAVANJA ZA ŽENE PRIPADNICE CILJNE SKUPINE</h4>
+                            <p> u sklopu projekta zaposlenim ženama bit će omogućeno pohađanje licenciranih
+                                obrazovnih programa obrazovanja i osposobljavanja kako bi se utjecalo na povećanje njihove
+                                zapošljivosti i nakon završetka projekta.<br><br>
+                            </p>
+                        </div>
+                        <div class="podiok">
+                            <h4>3. PROMIDŽBA I VIDLJIVOST<br> <br> </h4>
+                        </div>
+                        <div class="podiok">
+                            <h4>4. UPRAVLJANJE PROJEKTOM I ADMINISTRACIJA</p></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="vijesti" style="background-image: url({% static 'novosti/images/novostiBG.jpg' %});">
+
+        <div class="vijestinaslov">
+            <h2>Novosti...</h2>
+        </div>
+
+        <div class="sredinay">
+            <div class="sredinax">
+                <div class="vijestisredina">
+                    {% for post in posts %}
+                        <div class="kucica2" onclick="window.location='{% url 'novosti-detail' post.id %}'">
+                            <div class="kucica3">
+                                <a href="{% url 'novosti-detail' post.id %}">{{ post.title }}</a>
+                                <p>Objavio: {{ post.author }} {{ post.date_posted|date:"d F, Y" }}</p>
+                                <h4>{{ post.content|safe|truncatechars:175 }}</h4>
+                            </div>
+                            <div class="kucica4">
+                                {% if post.thumbBroj == 1 %}
+                                <div class="slajder3">
+                                    {% for p in images %}
+                                        {% if post.id == p.post_id %}
+                                            <div class="thumb" style="background-image: url({{ p.image.url }});"></div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                {% if post.thumbBroj == 2 %}
+                                    <div class="slajder2">
+                                        {% for p in images %}
+                                            {% if post.id == p.post_id %}
+                                                <div class="thumb" style="background-image: url({{ p.image.url }});"></div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                                {% if post.thumbBroj == 3 %}
+                                <div class="slajder1">
+                                    {% for p in images %}
+                                        {% if post.id == p.post_id %}
+                                            <div class="thumb" style="background-image: url({{ p.image.url }});"></div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                {% if post.thumbBroj >= 4 %}
+                                <div class="slajder">
+                                    {% for p in images %}
+                                        {% if post.id == p.post_id %}
+                                            <div class="thumb" style="background-image: url({{ p.image.url }});"></div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="novosti">
+        <header class="novosti-naslov">
+            <h2 class="naslov">Partneri...</h2>
+        </header>
+        <div class="kontejner">
+            <div class="kanta1">
+                <div class="kanta-tekst">
+                    <div class="kanta-tekst2">
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS1.jpg' %}">
+                            <p class="esf">Fond: Europski Socijalni Fond <br>
+                                Operativni program: Učinkoviti ljudski potencijali 2014. -
+                                2020. <br>
+                            </p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS3.jpg' %}">
+                            <p class="zeza">Tip natječaja: Otvoreni (trajni) poziv <br>na dostavu projektnih
+                                prijedloga (bespovratna sredstva)</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS5.jpg' %}">
+                            <p class="ministarstvo">Upravljačko tijelo: <br>Ministarstvo rada, <br>
+                                 mirovinskog sustava,<br>
+                                obitelji i socijalne politike</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS7.jpg' %}">
+                            <p class="hzzsplit">Partneri: <br>
+                                Hrvatski zavod za zapošljavanje,<br> regionalni ured Split, <br>
+                                Bihaćka 2/c, 21000 Split <br>
+                                Telefon: 021 / 310-555 <br>
+                                HZZ.Split@hzz.hr</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS9.jpg' %}">
+                            <p class="csssplit">Partneri: <br>
+                                Centar za socijalnu skrb Split <br>
+                                Ivana Gundulića 25 <br>
+                                Split 21000 <br>
+                                Telefon: 021/350-600
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanta2">
+                <div class="kanta-slika">
+                    <div class="kanta-slika2">
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS2.jpg' %}">
+                            <p class="nositelj">Nositelj projekta: <br> Udruga Idemo Dalje, Zagreb</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS4.jpg' %}">
+                            <p class="zazeli">Naziv poziva za dostavu projektnih prijedloga: <br> Zaželi - Program zapošljavanja žena – Faza II, UP.02.1.1.13</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS6.jpg' %}">
+                            <p class="hzz">Posredničko tijelo razine 2: <br> Hrvatski zavod za zapošljavanje,<br>
+                                Ured za financiranje i ugovaranje projekata Europske unije</p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS8.jpg' %}">
+                            <p class="hzzsibenik">Partneri: <br>
+                                Hrvatski zavod za zapošljavanje, <br>
+                                područni ured Šibenik <br>
+                                Matije Gupca 42 A, 22000 <br>
+                                Šibenik <br>
+                                T:022/20 11 11 <br>
+                                E: HZZ.Sibenik@hzz.hr
+                            </p>
+                        </div>
+                        <div class="novosti-tekst">
+                            <img src="{% static 'novosti/images/ikonaPS10.jpg' %}">
+                            <p class="csssibenik">Partneri: <br>
+                                Centar za socijalnu skrb Šibenik <br>
+                                Šibenik, Petra Grubišića 3 <br>
+                                Telefon: 022/201-222 <br>
+                                E-mail:  czss@si.t-com.hr
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   
+{% endblock content %}

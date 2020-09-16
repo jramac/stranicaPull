@@ -1,0 +1,31 @@
+{% extends "novosti/base.html" %}
+{% block navtraka %}
+    {% load static %}
+    <ul class="nav-traka">          
+        <li><a class="meni" href="{% url 'novosti-home' %}">naslovnica</a></li>
+        <li><a class="active" href="{% url 'novosti-novosti' %}">novosti</a></li>
+        <li><a class="meni" href="{% url 'novosti-oprojektu' %}">o projektu</a></li>
+        <li><a class="meni" href="{% url 'novosti-partneri' %}">partneri</a></li>
+        <li><a class="meni" href="{% url 'novosti-kontakt' %}">kontakt</a></li>
+    </ul>
+{% endblock navtraka %}
+
+{% block content %}
+    {% load static %}
+    <div class="pimpek">
+        <div class="pimpek2">
+            <div class="naslovpimp">
+                <h1>Novosti</h1>
+            </div>
+            <div class="pimpek3">
+            {% for post in posts %}
+                    <div class="kucica" onclick="window.location='{% url 'novosti-detail' post.id %}'">
+                        <a href="{% url 'novosti-detail' post.id %}">{{ post.title }}</a>
+                        <h4>By {{ post.author }} on {{ post.date_posted|date:"d F, Y" }}</h4>
+                        <p>{{ post.content|safe|truncatechars:300 }}</p>
+                    </div>
+            {% endfor %}  
+            </div>
+        </div>  
+    </div>
+{% endblock content %}

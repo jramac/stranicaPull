@@ -1,0 +1,33 @@
+{% extends "novosti/base.html" %}
+{% block navtraka %}
+    {% load static %}
+    <ul class="nav-traka">          
+        <li><a class="meni" href="{% url 'novosti-home' %}">naslovnica</a></li>
+        <li><a class="meni" href="{% url 'novosti-novosti' %}">novosti</a></li>
+        <li><a class="active" href="{% url 'novosti-oprojektu' %}">o projektu</a></li>
+        <li><a class="meni" href="{% url 'novosti-partneri' %}">partneri</a></li>
+        <li><a class="meni" href="{% url 'novosti-kontakt' %}">kontakt</a></li>
+    </ul>
+{% endblock navtraka %}
+{% block content %}
+    {% load static %}
+    <div class="home">
+        <img src="{% static 'novosti/images/elderly.jpg' %}">
+        <div class="padding">
+            <div class="naslov">
+                <a>O projektu...</a>
+            </div>
+            <div class="tekst">
+                <p>Projekt ŽeŽa provodi se na području ŠKŽ i SDŽ s posebnim naglaskom na ruralna područja šibenskog
+                    zaleđa, općinu Gornju Podstranu, šire područje općine Muč i otok Vis.<br><br> Kroz projekt će se na
+                    navedenim područjima zaposliti ukupno 15 dugotrajno nezaposlenih žena koje će skrbiti o 90 krajnjih
+                    korisnika - starijih i nemoćnih osoba i osoba u nepovoljnom položaju koje žive u vlastitim domovima.<br><br>
+                </p>
+                <p class="doljetekst">
+                    Ciljevi projekta su omogućiti teže zapošljivim ženama ulazak na tržište rada, povećati njihovu
+                    zapošljivost kroz licencirane obrazovne programe i povećati kvalitetu života krajnjih korisnika
+                    sprečavanjem njihove prerane institucionalizacije.</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends request.is_ajax|yesno:"fancybox/base.html,novosti/base.html" %}
+{% block navtraka %}
+    {% load static %}
+    <ul class="nav-traka">          
+        <li><a class="meni" href="{% url 'novosti-home' %}">naslovnica</a></li>
+        <li><a class="active" href="{% url 'novosti-novosti' %}">novosti</a></li>
+        <li><a class="meni" href="{% url 'novosti-oprojektu' %}">o projektu</a></li>
+        <li><a class="meni" href="{% url 'novosti-partneri' %}">partneri</a></li>
+        <li><a class="meni" href="{% url 'novosti-kontakt' %}">kontakt</a></li>
+    </ul>
+{% endblock navtraka %}
+
+{% block content %}
+    {% load static %}
+    <div class="details">
+        <div class="details2">
+            <div class="detailsnaslov">
+                <h1>{{ post.title }}</h1>
+                <p>Objavio: {{ post.author }} {{ post.date_posted|date:"d F, Y" }}</p>
+            </div>
+            <div class="detailstekst">
+                <p>{{ post.content|safe|escape|linebreaks }}</p> 
+            </div>
+            <!--<div class="detailsslike">
+                <div class="detailsslike2">
+                    {% for p in photos %}
+                        <a href="{{ p.image.url }}">
+                            <div class="slikabox" style="background-image: url({{ p.image.url }});">
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>-->
+        </div>
+    </div>
+{% endblock content %}

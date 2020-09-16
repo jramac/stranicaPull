@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'novosti/css/styles.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>stranica</title>
+</head>
+
+<body>   
+    <div class="sponzori">
+        <a class="isus" href="#"><img class="sponzor" src="{% static 'novosti/images/sponzor33.jpg' %}"></a>
+        <a class="isus" href="#"><img class="sponzor" src="{% static 'novosti/images/ikonaPS5.jpg' %}"></a>
+        <a class="isus" href="#"><img class="sponzor" src="{% static 'novosti/images/ikonaPS6.jpg' %}"></a>
+        <a class="isus" href="#"><img class="sponzor" src="{% static 'novosti/images/ikonaPS2.jpg' %}"></a>
+    </div>
+
+    <header> 
+        <img class="logo" src="{% static 'novosti/images/logo png.png' %}">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" style="color:black"></i>
+            </label>
+            {% block navtraka %}
+            {% endblock %}   
+        </nav>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <div class="okvir">
+
+            <div class="desno">
+
+                <div class="kanta-baner1">
+                    <div class="kanta-baner2"> 
+                        <img src="{% static 'novosti/images/eubaner.jpeg' %}">
+                    </div>
+                </div> 
+
+                <div class="kantap12">
+                    <div class="kantap1">
+                        <div class="kantap2">
+                            <p> Nositelj projekta: Udruga Idemo dalje <br>  
+                                Okvir: Europski Strukturni i Investicijski Fondovi <br>
+                                Fond: Europski Socijalni Fond <br>
+                                Operativni program: Učinkoviti ljudski potencijali 2014.-2020. <br><br>
+                            
+                            Partneri u projektu: Hrvatski zavod za zapošljavanje Područni ured Šibenik <br>
+                                                            Centar za socijalnu skrb Šibenik <br>
+                                                            Hrvatski zavod za zapošljavanje Regionalni ured Split <br>
+                                                            Centar za socijalnu skrb Split <br>
+                                Upravlajčko tijelo: Ministarstvo rada,  mirovinskog sustava obitelji i socijalne politike <br>
+                                Posredničko tijelo razine 2 - Hrvatski zavod za zapošljavanje, Ured za <br> finaciranje i ugovaranje projekata Europske unije <br><br>
+                                
+                                Ukupna vrijednost projekta: 1.388.400,00 kuna <br>
+                                ( projekt je 100% sufinanciran bespovratnim sredstvima Europske unije ) <br>
+                                Trajanje projekta: 18 mjeseci ( 18.06.2020. do 18..12.2021.) <br>
+                                
+                                Sadržaj web stranice isključiva je odgovornost Udruge Idemo Dalje <br>
+                            
+                                Izradu web stranice je sufinancirala Europska unija iz Europskog socijalnog fonda</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="okvirlapolapo">
+
+                <div class="kantalijevo1">
+                    <div class="kantalijevo2">
+                            <p> Kontakt:<br> <br>
+                                Udruga Idemo Dalje <br>
+                                Đakovačka 26 <br>
+                                10 000 Zagreb <br>
+                                Voditeljica projekta: Gordana Ramač <br>
+                                e-mail: udruga.idemodalje@gmail.com <br>
+                                M: 091 58 21 754 <br>
+                                Web: https:// zeza.hr
+                            </p>
+                    </div>
+                </div>
+                
+                <div class="lijevo-dolje">
+                    <a>- NASLOVNICA<br></a>
+                    <a>- NOVOSTI<br></a>
+                    <a>- O PROJEKTU<br></a>
+                    <a>- PARTNERI<br></a>
+                    <a>- KONTAKT<br></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
