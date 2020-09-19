@@ -68,7 +68,6 @@ def home(request):
 
         postedit.save()
 
-            
 
     return render(request, 'novosti/home.html',{
 
