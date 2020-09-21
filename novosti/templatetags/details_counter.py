@@ -2,10 +2,15 @@ from django import template
 
 register = template.Library()
 
+counter = 0
 @register.simple_tag
-class Counter:
+def counterr():
+    global counter
+    counter = counter + 1
+    return counter
+    
+@register.simple_tag
+def set_to_zero():
+    global counter
     counter = 0
-    def increment(self):
-        self.counter += 1
-    def set_to_zero(self):
-        self.counter = 0
+    return counter

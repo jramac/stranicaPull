@@ -36,6 +36,8 @@ class PostImage(models.Model):
 
     image = models.ImageField(upload_to='images/',blank=True,default='images/default.jpg')
 
+    redni = models.IntegerField(default=0)
+
     def __str__(self):
 
         return self.post.title

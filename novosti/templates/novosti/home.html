@@ -24,8 +24,6 @@
 
     {% load static %}
 
-    {% load details_counter %}
-
     <div class="container">
 
         <div class="slider">
@@ -448,9 +446,7 @@
 
                                         {% if post.id == p.post_id %}
 
-                                        {% counter.increment %}
-
-                                            {% if counter < 5 %}
+                                            {% if p.redni < 4 %}
 
                                                 <div class="thumb" style="background-image: url({{ p.image.url }});"></div>
 
@@ -459,8 +455,6 @@
                                         {% endif %}
 
                                     {% endfor %}
-
-                                    {% counter.set_to_zero %}
 
                                 </div>
 

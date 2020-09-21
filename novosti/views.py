@@ -67,7 +67,23 @@ def home(request):
         postedit.thumbBroj = br
 
         postedit.save()
+    
+    imageidlist = list(imageid)
+    for k in range(count):
+        if k>0:
+            if imageid[k]==imageid[k-1]:
+                imageidlist.remove(imageid[k])
 
+    imageidlistcount = len(imageidlist)
+
+    for m in range (imageidlistcount):
+        a = PostImage.objects.filter(post_id = imageidlist[m]).values_list('id',flat=True)
+        b = list(a)
+        bcount = len(b)
+        for n in range(bcount):
+            edit = PostImage.objects.get(id = b[n])
+            edit.redni = n
+            edit.save()
 
     return render(request, 'novosti/home.html',{
 
