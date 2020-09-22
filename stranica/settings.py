@@ -58,34 +58,15 @@ SECRET_KEY = config['SECRET_KEY']
 
 DEBUG = True
 
-
-
-SECURE_SSL_REDIRECT = False
-
-
-
-SESSION_COOKIE_SECURE = True
-
-
-
-CSRF_COOKIE_SECURE = True
-
-
-
-SECURE_CONTENT_TYPE_NOSNIFF = False
-
-
-
-SECURE_BROWSER_XSS_FILTER = True
-
-
-
 ALLOWED_HOSTS = [
 
     'zeza.com.hr',
 
     'www.zeza.com.hr',
-    '127.0.0.1'
+
+    '127.0.0.1',
+
+    'www.127.0.0.1'
 
 ]
 
@@ -113,9 +94,7 @@ INSTALLED_APPS = [
 
     'django.contrib.staticfiles',
 
-    'ckeditor',
-
-    'novosti.templatetags.details_counter'
+    'ckeditor'
 
 ]
 

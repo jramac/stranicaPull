@@ -117,7 +117,7 @@ body{
         display: none;
     }
 
-    /*--------SLIDESHOW--------*/
+    /*-----------SLIDESHOW-----------*/
 
     .container{
         position: relative;
@@ -356,6 +356,16 @@ body{
         line-height: 20px;
         width: 100%;
         font-size: 18px;
+    }
+
+    .slikav{
+        width: 32%;
+        height: auto;
+    }
+
+    .slikah{
+        width: 49%;
+        height: auto;
     }
 
     /*----HOME o projektu----*/
