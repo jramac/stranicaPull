@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from .models import Post, PostImage
+from .models import Post, PostImage, PostImageThumb
 
 
 
@@ -38,11 +38,11 @@ def home(request):
 
     post = Post.objects.filter().order_by('-id')[:4]
 
-    images = PostImage.objects.filter().order_by('id')
+    images = PostImageThumb.objects.filter().order_by('id')
 
     postid = Post.objects.filter().order_by('-id').values_list('id',flat=True)[:4]
 
-    imageid = PostImage.objects.filter().order_by('id').values_list('post_id',flat=True)
+    imageid = PostImageThumb.objects.filter().order_by('id').values_list('post_id',flat=True)
 
     count = imageid.count()
 
@@ -77,13 +77,20 @@ def home(request):
     imageidlistcount = len(imageidlist)
 
     for m in range (imageidlistcount):
-        a = PostImage.objects.filter(post_id = imageidlist[m]).values_list('id',flat=True)
+        a = PostImageThumb.objects.filter(post_id = imageidlist[m]).values_list('id',flat=True)
         b = list(a)
         bcount = len(b)
         for n in range(bcount):
-            edit = PostImage.objects.get(id = b[n])
+            edit = PostImageThumb.objects.get(id = b[n])
             edit.redni = n
             edit.save()
+
+    postid1 = list(postid)
+    boje = ['var(--clr-primary)','var(--clr-yellow)','var(--clr-blue)','var(--clr-primary)']
+    for o in range(len(postid1)):
+        edit1 = Post.objects.get(id=postid1[o])
+        edit1.pozadinskaSlika = boje[o]
+        edit1.save()
 
     return render(request, 'novosti/home.html',{
 

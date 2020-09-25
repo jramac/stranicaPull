@@ -203,7 +203,7 @@ body{
             left: 0;
         }
 
-        16.667%{
+        19%{
             left: 0;
         }
 
@@ -211,7 +211,7 @@ body{
             left: -100%;
         }
 
-        36.667%{
+        39%{
             left: -100%;
         }
 
@@ -219,7 +219,7 @@ body{
             left: -200%;
         }
 
-        56.667%{
+        59%{
             left: -200%;
         }
 
@@ -227,7 +227,7 @@ body{
             left: -300%;
         }
 
-        76.667%{
+        79%{
             left: -300%;
         }
 
@@ -235,7 +235,7 @@ body{
             left: -400%;
         }
 
-        96.667%{
+        99%{
             left: -400%;
         }
 
@@ -417,142 +417,237 @@ body{
 
     /*-------CILJEVI I AKTIVNOSTI PROJEKTA------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 900px;
-        position: relative;
+        height: 650px;
         display: flex;
         flex-direction: column;
+        background: white;
         margin-top: 10px;
-        overflow: hidden;
     }
-
-    .info .info-naslov{
-        text-align: center;
-        height: 15%;
-        background: var(--clr-yellow);
-        margin-top: 0;
+    
+    .naslovv{
+        width: 100%;
+        height: 20%;
+        display: flex;
     }
-
-    .info .info-naslov h2{
-        margin-top: 1.5%;
-        font-family: "Work Sans",sans-serif;
+    
+    .naslovv a{
+        margin: auto;
         font-size: 50px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .box1{  
+        flex-basis: 22.5%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 55%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        text-align: center;
         color: #fff;
-    }
-
-    .info .kanta{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: row;
-        justify-content: center;
-        background: var(--clr-yellow); 
-    }
-
-    .info .kanta .kanta-tekst1{
-        width: 33.3%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 100%;
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin: 0 5% 0 5%;
-        line-height: 25px;
-        background-color: #ffffff4f;
-        padding: 1em 1.5em 1em 1.5em;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok{
-        padding: 5px 10px 5px 15px;
-        position: relative;
-        margin-top: 15px;
-        border-style: solid;
-        border-width: thin;
-        border-color: rgba(51, 50, 53, 0.25);
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok p{
-        font-size: 18px;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok h3{
-        text-align: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok h4{
-        font-size: 17px;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst h2{
-        text-align: center;
-        font-size: 30px;
-        position: relative;
-        top: 10px;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 100%;
-        width: 33.3%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
         font-weight: bold;
-        color: #fff;
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 40px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 22.5%;
+        background: var(--clr-green);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 95%;
-        padding: 2em 3em 2em 3em;
     }
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
+    
+    .box2 .naslov1 h3{
         font-size: 30px;
-    }
-
-    .projektinfo p{
-        margin: 21px 13px 0 20px;
+        color: azure;
         text-align: center;
-        letter-spacing: 1px;
-        font-size: 21px;
-        line-height: 50px;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 40px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 40px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 22.5%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 40px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+        background: var(--clr-green);
+    }
+    
+    .naslov2{
+        height: 15%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .srediste{
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    .kucica_1{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 25%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*------PARTNERI I SPONZORI-----*/
@@ -756,20 +851,18 @@ body{
         width: 100%;
         background-size: cover;
         background-position: top;
+        background: white;
     }
 
     .vijesti .vijestinaslov{
         width: 100%;
         height: 10%;
+        text-align: center;
     }
 
-    .vijesti .vijestinaslov h2{
-        font-family: "Work Sans",sans-serif;
+    .vijesti .vijestinaslov a{
         position: relative;
-        top: 10px;
         font-size: 50px;
-        color: rgb(32, 32, 32);
-        text-align: center;
     }
 
     .vijesti .sredinay{
@@ -802,16 +895,11 @@ body{
         margin: auto;
         position: relative;
         top: 0;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
-        border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -822,20 +910,25 @@ body{
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 a{
-        font-size: 23px;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
         margin-top: 4px;
         font-style: normal;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p.is{
         font-size: 15px;
         font-style: italic;
+        color: white;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 h4 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
         position: relative;
-        margin-top: 7px;
+        margin-top: 10px;
         font-style: normal;
+        font-size: 20px;
+        color: white;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica4{
@@ -1003,136 +1096,174 @@ body{
 
     /*------FOOOTER----*/
 
-    footer{
+    .footer{
         width: 100%;
-        height: 600px;
-        background: #63bcec;
-        position: relative;
+        height: 500px;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
-        top: 2.5em;
-        width: 70%;
-        height: 90%;
+    
+    .gore{
+        width: 100%;
+        height: 65%;
         display: flex;
-        flex-direction: row;
     }
-
-    footer .okvir .okvirlapolapo{
-        height: 100%;
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .okvir .kantalijevo1{
-        width: 90%;
-        height: 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .kantalijevo1 .kantalijevo2{
+    
+    .sredina{
         width: 100%;
         height: 80%;
+        margin: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2 .lijevo{
-        position: relative;
-        height: 100%;
-        width: 85%;
-        line-height: 20px;
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .lijevo-dolje{
-        position: relative;
-        top: 2em;
-        width: 90%;
-        height: 25%;
+    
+    .kutija1 p{
+        font-size: 20px;
     }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 80%;
-        position: relative;
-        margin-left: 8%;
-        line-height: 30px;
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .desno{
-        position: relative;
-        top: 0;
-        width: 65%;
-        height: 100%;
+    
+    .kutija2 p{
+        font-size: 19px;
     }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 35%;
-        width: 100%;
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 30px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 180px;
+    
+    .dio1{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .dio2{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    /*footer .okvir .desno .kanta-baner1 .kanta-baner2 .baner{
-        background-image: url(/images/eubaner.jpeg);
-        position: relative;
-        background-size: contain;
-        width: 600px;
-        height: 100%;
-    }*/
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 67%;
-        height: auto;
+    
+    .dio2 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap12{
-        height: 65%;
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1{
-        height: 100%;
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .dio3 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 80%;
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 28%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: 100%;
-        line-height: 18px;
+        width: auto;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+    }
+    
+    .dolje{
+        width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
+        display: flex;
+    }
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-------KONTAKT-------*/
@@ -1599,141 +1730,237 @@ body{
 
     /*-------CILJEVI I AKTIVNOSTI PROJEKTA------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 950px;
-        position: relative;
+        height: 650px;
         display: flex;
         flex-direction: column;
+        background: white;
         margin-top: 10px;
-        overflow: hidden;
     }
-
-    .info .info-naslov{
-        text-align: center;
-        height: 10%;
-        background: var(--clr-yellow);
-        margin-top: 0;
+    
+    .naslovv{
+        width: 100%;
+        height: 20%;
+        display: flex;
     }
-
-    .info .info-naslov h2{
-        font-family: "Work Sans",sans-serif;
+    
+    .naslovv a{
+        margin: auto;
         font-size: 50px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .box1{  
+        flex-basis: 22.5%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 55%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        text-align: center;
         color: #fff;
-    }
-
-    .info .kanta{
-        width: 100%;
-        height: 90%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: row;
-        justify-content: center;
-        background: var(--clr-yellow); 
-    }
-
-    .info .kanta .kanta-tekst1{
-        width: 33.3%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 100%;
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin: 0 5% 0 5%;
-        line-height: 17px;
-        background-color: #ffffff4f;
-        padding: 1em 1.5em 1em 1.5em;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok{
-        padding: 5px 10px 5px 15px;
-        position: relative;
-        margin-top: 15px;
-        border-style: solid;
-        border-width: thin;
-        border-color: rgba(51, 50, 53, 0.25);
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok p{
-        font-size: 16px;
-        margin-top: 7px;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok h3{
-        text-align: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok h4{
-        font-size: 17px;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst h2{
-        text-align: center;
-        font-size: 30px;
-        position: relative;
-        top: 10px;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 100%;
-        width: 33.3%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
         font-weight: bold;
-        color: #fff;
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 30px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 22.5%;
+        background: var(--clr-green);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 95%;
-        padding: 2em 3em 2em 3em;
     }
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
+    
+    .box2 .naslov1 h3{
         font-size: 30px;
-    }
-
-    .projektinfo p{
-        margin: 21px 0 0 0;
+        color: azure;
         text-align: center;
-        font-size: 18px;
-        line-height: 25px;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 30px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 30px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 22.5%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 90%;
+        font-size: 20px;
+        margin: 30px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+        background: var(--clr-green);
+    }
+    
+    .naslov2{
+        height: 15%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .srediste{
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    .kucica_1{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 25%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*------PARTNERI I SPONZORI-----*/
@@ -1933,24 +2160,22 @@ body{
     .vijesti{
         margin-top: 10px;
         position: relative;
-        height: 450px;
+        height: 550px;
         width: 100%;
         background-size: cover;
         background-position: top;
+        background: white;
     }
 
     .vijesti .vijestinaslov{
         width: 100%;
         height: 10%;
+        text-align: center;
     }
 
-    .vijesti .vijestinaslov h2{
-        font-family: "Work Sans",sans-serif;
+    .vijesti .vijestinaslov a{
         position: relative;
-        top: 10px;
         font-size: 50px;
-        color: rgb(32, 32, 32);
-        text-align: center;
     }
 
     .vijesti .sredinay{
@@ -1983,16 +2208,11 @@ body{
         margin: auto;
         position: relative;
         top: 0;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
-        border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -2003,21 +2223,25 @@ body{
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 a{
-        font-size: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
         margin-top: 4px;
         font-style: normal;
+    }
+
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p.is{
+        font-size: 13px;
+        font-style: italic;
+        color: white;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
-        font-size: 15px;
-        font-style: italic;
-    }
-
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 h4 p{
         position: relative;
-        margin-top: 4px;
+        margin-top: 8px;
         font-style: normal;
-        line-height: 15px;
+        font-size: 18px;
+        color: white;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica4{
@@ -2185,136 +2409,174 @@ body{
 
     /*------FOOOTER----*/
 
-    footer{
+    .footer{
         width: 100%;
-        height: 800px;
-        background: #63bcec;
-        position: relative;
+        height: 500px;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
-        top: 2.5em;
-        width: 95%;
-        height: 90%;
+    
+    .gore{
+        width: 100%;
+        height: 65%;
         display: flex;
-        flex-direction: row;
     }
-
-    footer .okvir .okvirlapolapo{
-        height: 100%;
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .okvir .kantalijevo1{
-        width: 90%;
-        height: 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .kantalijevo1 .kantalijevo2{
+    
+    .sredina{
         width: 100%;
         height: 80%;
+        margin: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2 .lijevo{
-        position: relative;
-        height: 100%;
-        width: 85%;
-        line-height: 20px;
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .lijevo-dolje{
-        position: relative;
-        top: 2em;
-        width: 90%;
-        height: 25%;
+    
+    .kutija1 p{
+        font-size: 18px;
     }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 80%;
-        position: relative;
-        margin-left: 8%;
-        line-height: 30px;
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .desno{
-        position: relative;
-        top: 0;
-        width: 65%;
-        height: 100%;
+    
+    .kutija2 p{
+        font-size: 17px;
     }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 35%;
-        width: 100%;
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 30px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 180px;
+    
+    .dio1{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .dio2{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    /*footer .okvir .desno .kanta-baner1 .kanta-baner2 .baner{
-        background-image: url(/images/eubaner.jpeg);
-        position: relative;
-        background-size: contain;
-        width: 600px;
-        height: 100%;
-    }*/
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 67%;
-        height: auto;
+    
+    .dio2 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap12{
-        height: 65%;
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1{
-        height: 100%;
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .dio3 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 80%;
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 28%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: 100%;
-        line-height: 18px;
+        width: auto;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+    }
+    
+    .dolje{
+        width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
+        display: flex;
+    }
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-------KONTAKT-------*/
@@ -2781,142 +3043,237 @@ body{
 
     /*-------CILJEVI I AKTIVNOSTI PROJEKTA------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 950px;
-        position: relative;
+        height: 650px;
         display: flex;
         flex-direction: column;
+        background: white;
         margin-top: 10px;
-        overflow: hidden;
     }
-
-    .info .info-naslov{
-        text-align: center;
-        height: 7%;
-        background: var(--clr-yellow);
-        margin-top: 0;
+    
+    .naslovv{
+        width: 100%;
+        height: 20%;
+        display: flex;
     }
-
-    .info .info-naslov h2{
-        margin-top: 1.5%;
-        font-family: "Work Sans",sans-serif;
+    
+    .naslovv a{
+        margin: auto;
         font-size: 50px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .box1{  
+        flex-basis: 22.5%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 55%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        text-align: center;
         color: #fff;
-    }
-
-    .info .kanta{
-        width: 100%;
-        height: 93%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: row;
-        justify-content: center;
-        background: var(--clr-yellow); 
-    }
-
-    .info .kanta .kanta-tekst1{
-        width: 33.3%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 100%;
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin: 0 5% 0 5%;
-        line-height: 17px;
-        background-color: #ffffff4f;
-        padding: 1em 1.5em 1em 1.5em;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok{
-        padding: 5px 10px 5px 15px;
-        position: relative;
-        margin-top: 15px;
-        border-style: solid;
-        border-width: thin;
-        border-color: rgba(51, 50, 53, 0.25);
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok p{
-        font-size: 16px;
-        margin-top: 7px;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok h3{
-        text-align: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok h4{
-        font-size: 17px;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst h2{
-        text-align: center;
-        font-size: 30px;
-        position: relative;
-        top: 10px;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 100%;
-        width: 33.3%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
         font-weight: bold;
-        color: #fff;
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 22.5%;
+        background: var(--clr-green);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 95%;
-        padding: 2em 3em 2em 3em;
     }
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
+    
+    .box2 .naslov1 h3{
         font-size: 30px;
-    }
-
-    .projektinfo p{
-        margin: 21px 0 0 0;
+        color: azure;
         text-align: center;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 100%;
         font-size: 18px;
-        line-height: 25px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 22.5%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+        background: var(--clr-green);
+    }
+    
+    .naslov2{
+        height: 15%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .srediste{
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    .kucica_1{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 25%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*------PARTNERI I SPONZORI-----*/
@@ -3168,14 +3525,12 @@ body{
         top: 0;
         border-style: solid;
         border-width: thin;
-        border-radius: 5px;
         border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -3186,21 +3541,23 @@ body{
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 a{
-        font-size: 18px;
+        font-size: 17px;
         margin-top: 4px;
         font-style: normal;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
-        font-size: 15px;
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p.is{
+        font-size: 13px;
         font-style: italic;
+        margin-top: 2px;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 h4 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
         position: relative;
         margin-top: 4px;
         font-style: normal;
         line-height: 15px;
+        font-size: 16px;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica4{
@@ -3368,136 +3725,174 @@ body{
 
     /*------FOOOTER----*/
 
-    footer{
+    .footer{
         width: 100%;
-        height: 800px;
-        background: #63bcec;
-        position: relative;
+        height: 500px;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
-        top: 2.5em;
-        width: 95%;
-        height: 90%;
+    
+    .gore{
+        width: 100%;
+        height: 65%;
         display: flex;
-        flex-direction: row;
     }
-
-    footer .okvir .okvirlapolapo{
-        height: 100%;
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .okvir .kantalijevo1{
-        width: 90%;
-        height: 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .kantalijevo1 .kantalijevo2{
+    
+    .sredina{
         width: 100%;
         height: 80%;
+        margin: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2 .lijevo{
-        position: relative;
-        height: 100%;
-        width: 85%;
-        line-height: 20px;
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .lijevo-dolje{
-        position: relative;
-        top: 2em;
-        width: 90%;
-        height: 25%;
+    
+    .kutija1 p{
+        font-size: 16px;
     }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 80%;
-        position: relative;
-        margin-left: 8%;
-        line-height: 30px;
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .desno{
-        position: relative;
-        top: 0;
-        width: 65%;
-        height: 100%;
+    
+    .kutija2 p{
+        font-size: 15px;
     }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 35%;
-        width: 100%;
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 30px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 180px;
+    
+    .dio1{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .dio2{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    /*footer .okvir .desno .kanta-baner1 .kanta-baner2 .baner{
-        background-image: url(/images/eubaner.jpeg);
-        position: relative;
-        background-size: contain;
-        width: 600px;
-        height: 100%;
-    }*/
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 67%;
-        height: auto;
+    
+    .dio2 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap12{
-        height: 65%;
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1{
-        height: 100%;
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .dio3 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 80%;
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 28%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: 100%;
-        line-height: 18px;
+        width: auto;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+    }
+    
+    .dolje{
+        width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
+        display: flex;
+    }
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-------KONTAKT-------*/
@@ -3810,124 +4205,237 @@ body{
 
     /*----------O PROJEKTU-----------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 1800px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin-top: 10px;
+    }
+    
+    .naslovv{
+        width: 100%;
+        height: 20%;
+        display: flex;
+    }
+    
+    .naslovv a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .box1{  
+        flex-basis: 22.5%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 15%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 70%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        text-align: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 22.5%;
+        background: var(--clr-green);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box2 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 22.5%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
         position: relative;
         margin-top: 10px;
-        background: var(--clr-yellow);
+        background: var(--clr-green);
     }
     
-    .info .info-naslov{
-        text-align: center;
-        height: 6%;
-        position: relative;
-        background: var(--clr-yellow);
-        margin-top: 0;
-    }
-    
-    .info .info-naslov h2{
-        padding-top: 10px;
-        font-family: "Work Sans",sans-serif;
-        font-size: 35px;
-        color: #fff;
-        position: relative;
-        top: 0;
-    }
-    
-    .info .kanta{
-        width: 100vw;
-        height: 94%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: column;
-        background: var(--clr-yellow);
-    }
-
-    .info .kanta .kanta-tekst1{
+    .naslov2{
+        height: 15%;
         width: 100%;
-        height: 33.33%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 50px;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
+    }
+    
+    .srediste{
         width: 100%;
         height: 90%;
-        margin: 0;
-        margin-top: 5px;
-        line-height: 17px;
-        background-color:  rgba(168, 174, 175, 0.733);
-        border-style: dashed;
-        padding: .5em 1.5em 2em 1.5em;
-        border-width: thin;
-        font-size: 17px;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 33.33%;
-        width: 100%;
-        display: flex;
-        flex-direction: column ;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-image: url(/images/slide3.jpg);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
-        font-weight: bold;
-        color: #fff;
-
+        margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 90%;
-        padding: 2em 0 2em 0;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok p{
-        font-size: 18px;
-        position: relative;
-        margin-top: 15px;
-    }
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
-        font-size: 25px;
-    }
-
-    .projektinfo p{
-        text-align: center;
         font-size: 20px;
-        line-height: 35px;
+    }
+    
+    .kucica_1{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 25%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*-----NOVOSTI home-------*/
@@ -3983,16 +4491,12 @@ body{
         height: 400px;
         margin: 20px auto 20px auto;
         position: relative;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
         border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -4375,136 +4879,174 @@ body{
 
     /*------FOOOTER----*/
 
-    footer{
+    .footer{
         width: 100%;
-        height: 800px;
-        background: #63bcec;
-        position: relative;
+        height: 500px;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
-        top: 2.5em;
-        width: 95%;
-        height: 90%;
+    
+    .gore{
+        width: 100%;
+        height: 65%;
         display: flex;
-        flex-direction: row;
     }
-
-    footer .okvir .okvirlapolapo{
-        height: 100%;
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .okvir .kantalijevo1{
-        width: 90%;
-        height: 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .kantalijevo1 .kantalijevo2{
+    
+    .sredina{
         width: 100%;
         height: 80%;
+        margin: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2 .lijevo{
-        position: relative;
-        height: 100%;
-        width: 85%;
-        line-height: 20px;
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .lijevo-dolje{
-        position: relative;
-        top: 2em;
-        width: 90%;
-        height: 25%;
+    
+    .kutija1 p{
+        font-size: 14px;
     }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 80%;
-        position: relative;
-        margin-left: 8%;
-        line-height: 30px;
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
     }
-
-    footer .okvir .desno{
-        position: relative;
-        top: 0;
-        width: 65%;
-        height: 100%;
+    
+    .kutija2 p{
+        font-size: 14px;
     }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 35%;
-        width: 100%;
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 15px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 180px;
+    
+    .dio1{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .dio2{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    /*footer .okvir .desno .kanta-baner1 .kanta-baner2 .baner{
-        background-image: url(/images/eubaner.jpeg);
-        position: relative;
-        background-size: contain;
-        width: 600px;
-        height: 100%;
-    }*/
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 67%;
-        height: auto;
+    
+    .dio2 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap12{
-        height: 65%;
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1{
-        height: 100%;
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .dio3 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 80%;
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 28%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: 100%;
-        line-height: 18px;
+        width: auto;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+    }
+    
+    .dolje{
+        width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
+        display: flex;
+    }
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-----NOVOSTI LANDING----*/
@@ -4937,123 +5479,237 @@ body{
 
     /*----------O PROJEKTU-----------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 1800px;
-        position: relative;
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        background: white;
         margin-top: 10px;
-        background: var(--clr-yellow);
     }
     
-    .info .info-naslov{
+    .naslovv{
+        width: 100%;
+        height: 15%;
+        display: flex;
+    }
+    
+    .naslovv a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .box1{  
+        flex-basis: 22%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 60%;
+        width: 100%;
+        margin: auto;
+        display: flex;
         text-align: center;
-        height: 6%;
-        position: relative;
-        background: var(--clr-yellow);
-        margin-top: 0;
-    }
-    
-    .info .info-naslov h2{
-        padding-top: 10px;
-        font-family: "Work Sans",sans-serif;
-        font-size: 35px;
         color: #fff;
-        position: relative;
-        top: 0;
-    }
-    
-    .info .kanta{
-        width: 100vw;
-        height: 94%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: column;
-        background: var(--clr-yellow);
-    }
-
-    .info .kanta .kanta-tekst1{
-        width: 100%;
-        height: 33.33%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 90%;
-        margin: 0;
-        margin-top: 5px;
-        line-height: 17px;
-        background-color:  rgba(168, 174, 175, 0.733);
-        border-style: dashed;
-        padding: .5em 1.5em 2em 1.5em;
-        border-width: thin;
-        font-size: 17px;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 33.33%;
-        width: 100%;
-        display: flex;
-        flex-direction: column ;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-image: url(/images/slide3.jpg);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
         font-weight: bold;
-        color: #fff;
-
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 25%;
+        background: var(--clr-green);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 90%;
-        padding: 2em 0 2em 0;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok p{
-        font-size: 20px;
+    
+    .box2 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 22.5%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
+        position: relative;
         margin-top: 10px;
+        background: var(--clr-green);
     }
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
-        font-size: 25px;
+    
+    .naslov2{
+        height: 15%;
+        width: 100%;
+        display: flex;
     }
-
-    .projektinfo p{
-        text-align: center;
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .srediste{
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
         font-size: 20px;
-        line-height: 35px;
+    }
+    
+    .kucica_1{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 25%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*-----NOVOSTI home-------*/
@@ -5109,16 +5765,12 @@ body{
         height: 400px;
         margin: 20px auto 20px auto;
         position: relative;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
         border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -5134,15 +5786,16 @@ body{
         font-style: normal;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p.is{
         font-size: 15px;
         font-style: italic;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 h4 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
         position: relative;
         margin-top: 7px;
         font-style: normal;
+        font-size: 18px;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica4{
@@ -5501,135 +6154,174 @@ body{
 
     /* -------FOOTER ------------*/
 
-    footer{
+    .footer{
         width: 100%;
-        height: 600px;
-        background: #63bcec;
-        position: relative;
+        height: 500px;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
+    
+    .gore{
         width: 100%;
-        height: 100%;
+        height: 65%;
         display: flex;
+    }
+    
+    .sredina{
+        width: 100%;
+        height: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
+    }
+    
+    .kutija1 p{
+        font-size: 13px;
+    }
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 10px;
+        color: black;
+    }
+    
+    .kutija2 p{
+        font-size: 12px;
+    }
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        top: 0;
+        padding-left: 15px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .okvirlapolapo{
-        height: unset;
+    
+    .dio1{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        display: none;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
     }
-
-    footer .okvir .okvirlapolapo .kantalijevo1{
-        width: 80%;
+    
+    .dio2{
         width: 100%;
-        height: unset;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;
-    }
-
-    footer .okvir .okvirlapolapo .kantalijevo1 .kantalijevo2{
-        width: 70%;
-        height: unset;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        position: relative;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2 p{
+    
+    .dio2 i{
+        flex-basis: 10%;
+    }
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio3 i{
+        flex-basis: 10%;
+    }
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 28%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: 100%;
-        position: relative;
+        width: auto;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .okvirlapolapo .lijevo-dolje{
-        width: 70%;
-        height: unset;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        margin-left: 10%;
-    }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 90%;
-        position: relative;
-        line-height: 20px;
-    }
-
-    footer .okvir .desno{
-        position: relative;
+    
+    .dolje{
         width: 100%;
-        height: unset;
-    }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 23%;
-        width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 150px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 100%;
-        height: auto;
-        position: relative;
-        margin-top: 20px;
-    }
-
-    footer .okvir .desno .kantap12{
-        height: 77%;
-        margin: 20px 0 20px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kantap12 .kantap1{
-        height: 100%;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 90%;
-        height: 100%;
-        line-height: 18px;
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-----NOVOSTI LANDING----*/
@@ -6077,121 +6769,237 @@ body{
 
     /*----------O PROJEKTU-----------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 1800px;
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin-top: 10px;
+    }
+    
+    .naslovv{
+        width: 100%;
+        height: 15%;
+        display: flex;
+    }
+    
+    .naslovv a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .box1{  
+        flex-basis: 22%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 60%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 27%;
+        background: var(--clr-green);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box2 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 20%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
         position: relative;
         margin-top: 10px;
-        background: var(--clr-yellow);
+        background: var(--clr-green);
     }
     
-    .info .info-naslov{
-        text-align: center;
-        height: 6%;
-        position: relative;
-        background: var(--clr-yellow);
-        margin-top: 0;
-    }
-    
-    .info .info-naslov h2{
-        padding-top: 10px;
-        font-family: "Work Sans",sans-serif;
-        font-size: 35px;
-        color: #fff;
-        position: relative;
-        top: 0;
-    }
-    
-    .info .kanta{
-        width: 100vw;
-        height: 94%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: column;
-        background: var(--clr-yellow);
-    }
-
-    .info .kanta .kanta-tekst1{
+    .naslov2{
+        height: 15%;
         width: 100%;
-        height: 33.33%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 50px;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
+    }
+    
+    .srediste{
         width: 100%;
         height: 90%;
-        margin: 0;
-        line-height: 16px;
-        background-color:  rgba(168, 174, 175, 0.733);
-        border-style: dashed;
-        padding: .5em 1.5em 2em 1.5em;
-        border-width: thin;
-        font-size: 14px;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 33.33%;
-        width: 100%;
-        display: flex;
-        flex-direction: column ;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-image: url(/images/slide3.jpg);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
-        font-weight: bold;
-        color: #fff;
-
+        margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 90%;
-        padding: 2em 0 2em 0;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok p{
-        font-size: 13px;
-    }
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
-        font-size: 25px;
-    }
-
-    .projektinfo p{
-        text-align: center;
         font-size: 20px;
-        line-height: 35px;
+    }
+    
+    .kucica_1{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 25%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*-----NOVOSTI home-------*/
@@ -6247,16 +7055,12 @@ body{
         height: 400px;
         margin: 20px auto 20px auto;
         position: relative;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
         border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -6272,15 +7076,16 @@ body{
         font-style: normal;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p.is{
         font-size: 15px;
         font-style: italic;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 h4 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
         position: relative;
         margin-top: 7px;
         font-style: normal;
+        font-size: 19px;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica4{
@@ -6639,131 +7444,181 @@ body{
 
     /* -------FOOTER ------------*/
 
-    footer{
+    .footer{
         width: 100%;
         height: 1000px;
-        background: #63bcec;
-        position: relative;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
+    
+    .gore{
+        width: 100%;
+        height: 73%;
+        display: flex;
+    }
+    
+    .sredina{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        top: 0;
-    }
+        justify-content: space-between;
 
-    footer .okvir .okvirlapolapo{
-        height: unset;
-        width: 100%;
+    }
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .kutija1 p{
+        font-size: 14px;
+    }
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .kutija2 p{
+        font-size: 14px;
+    }
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 15px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        width: 80%;
+        margin: auto;
     }
-
-    footer .okvir .kantalijevo1{
+    
+    .dio1{
         width: 100%;
-        height: unset;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
     }
-
-    footer .okvir .okvirlapolapo .kantalijevo1 .kantalijevo2{
+    
+    .dio2{
         width: 100%;
-        height: unset;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        position: relative;
     }
-
-    footer .okvir .okvirlapolapo .kantalijevo1 .kantalijevo2 p{
-        width: 90%;
-        height: 100%;
-        position: relative;
+    
+    .dio2 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .okvirlapolapo .lijevo-dolje{
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
-        height: unset;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 90%;
-        position: relative;
-        line-height: 20px;
-    }
-
-    footer .okvir .desno{
-        position: relative;
-        top: 0;
-        width: 100%;
-        height: unset;
-    }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 23%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 150px;
-        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 100%;
+    
+    .dio3 i{
+        flex-basis: 10%;
+    }
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: auto;
-    }
-
-    footer .okvir .desno .kantap12{
-        height: 77%;
-        margin: 20px 0 20px 0;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .desno .kantap12 .kantap1{
-        height: 100%;
+    
+    .dolje{
         width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 90%;
-        height: 100%;
-        line-height: 18px;
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-----NOVOSTI LANDING----*/
@@ -7196,123 +8051,237 @@ body{
 
     /*----------O PROJEKTU-----------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 1800px;
+        height: 1050px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin-top: 10px;
+    }
+    
+    .naslovv{
+        width: 100%;
+        height: 15%;
+        display: flex;
+    }
+    
+    .naslovv a{
+        margin: auto;
+        font-size: 50px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .box1{  
+        flex-basis: 22%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 60%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 27%;
+        background: var(--clr-green);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box2 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 20%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
         position: relative;
         margin-top: 10px;
-        background: var(--clr-yellow);
+        background: var(--clr-green);
     }
     
-    .info .info-naslov{
-        text-align: center;
-        height: 6%;
-        position: relative;
-        background: var(--clr-yellow);
-        margin-top: 0;
-    }
-    
-    .info .info-naslov h2{
-        padding-top: 10px;
-        font-family: "Work Sans",sans-serif;
-        font-size: 35px;
-        color: #fff;
-        position: relative;
-        top: 0;
-    }
-    
-    .info .kanta{
-        width: 100vw;
-        height: 94%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: column;
-        background: var(--clr-yellow);
-    }
-
-    .info .kanta .kanta-tekst1{
+    .naslov2{
+        height: 15%;
         width: 100%;
-        height: 33.33%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 40px;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
+    }
+    
+    .srediste{
         width: 100%;
         height: 90%;
-        margin: 0;
-        line-height: 16px;
-        background-color:  rgba(168, 174, 175, 0.733);
-        border-style: dashed;
-        padding: .5em 1.5em 2em 1.5em;
-        border-width: thin;
-        font-size: 13px;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 33.33%;
-        width: 100%;
-        display: flex;
-        flex-direction: column ;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-image: url(/images/slide3.jpg);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
-        font-weight: bold;
-        color: #fff;
-
+        margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 90%;
-        padding: 2em 0 2em 0;
-    }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst .podiok p{
-        font-size: 13px;
-        margin-top: 0;
-    }
-
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
-        font-size: 25px;
-    }
-
-    .projektinfo p{
-        text-align: center;
         font-size: 20px;
-        line-height: 35px;
+    }
+    
+    .kucica_1{
+        height: 20%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 50%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 15%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 15%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*-----NOVOSTI home-------*/
@@ -7368,16 +8337,12 @@ body{
         height: 400px;
         margin: 20px auto 20px auto;
         position: relative;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
         border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -7388,20 +8353,22 @@ body{
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 a{
-        font-size: 23px;
+        font-size: 22px;
         margin-top: 4px;
         font-style: normal;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p.is{
         font-size: 15px;
         font-style: italic;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 h4 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
         position: relative;
         margin-top: 7px;
         font-style: normal;
+        font-size: 20px;
+        line-height: 17px;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica4{
@@ -7760,130 +8727,181 @@ body{
 
     /* -------FOOTER ------------*/
 
-    footer{
+    .footer{
         width: 100%;
         height: 1000px;
-        background: #63bcec;
-        position: relative;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
+    
+    .gore{
+        width: 100%;
+        height: 78%;
+        display: flex;
+    }
+    
+    .sredina{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        top: 0;
-    }
+        justify-content: space-between;
 
-    footer .okvir .okvirlapolapo{
-        height: unset;
-        width: 100%;
+    }
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .kutija1 p{
+        font-size: 14px;
+    }
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .kutija2 p{
+        font-size: 14px;
+    }
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 15px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        width: 80%;
+        margin: auto;
     }
-
-    footer .okvir .kantalijevo1{
+    
+    .dio1{
         width: 100%;
-        height: unset;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2{
+    
+    .dio2{
         width: 100%;
-        height: unset;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2 .lijevo{
-        position: relative;
-        height: unset;
-        width: 90%;
+    
+    .dio2 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .okvirlapolapo .lijevo-dolje{
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
-        height: unset;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 90%;
-        position: relative;
-        line-height: 20px;
-    }
-
-    footer .okvir .desno{
-        position: relative;
-        top: 0;
-        width: 100%;
-        height: unset;
-    }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 23%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 150px;
-        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 100%;
+    
+    .dio3 i{
+        flex-basis: 10%;
+    }
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: auto;
-    }
-
-    footer .okvir .desno .kantap12{
-        height: unset;
-        margin: 20px 0 20px 0;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .desno .kantap12 .kantap1{
-        height: 100%;
+    
+    .dolje{
         width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 90%;
-        height: 100%;
-        line-height: 18px;
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-----NOVOSTI LANDING----*/
@@ -8361,118 +9379,237 @@ body{
 
     /*----------O PROJEKTU-----------*/
 
-    .info{
+    .okvir{
         width: 100%;
-        height: 2000px;
+        height: 1050px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin-top: 10px;
+    }
+    
+    .naslovv{
+        width: 100%;
+        height: 15%;
+        display: flex;
+    }
+    
+    .naslovv a{
+        margin: auto;
+        font-size: 45px;
+    }
+    
+    .box{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .box1{  
+        flex-basis: 22%;
+        background: var(--clr-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .naslov1{
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .ikona{
+        height: 15%;
+        width: 100%;
+    
+        display: flex;
+    }
+    
+    .tekst1{
+        height: 60%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .box1 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box1 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box1 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box2{  
+        flex-basis: 27%;
+        background: var(--clr-green);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box2 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box2 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box2 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box3{  
+        flex-basis: 22.5%;
+        background: var(--clr-yellow);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box3 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box3 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box3 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .box4{  
+        flex-basis: 20%;
+        background: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4 .naslov1 h3{
+        font-size: 30px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .box4 .ikona i{
+        color: white;
+        margin: auto;
+    }
+    
+    .box4 .tekst1 p{
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto auto auto;
+    }
+    
+    .aktivnosti{
+        height: 650px;
+        width: 100%;
         position: relative;
         margin-top: 10px;
-        background: var(--clr-yellow);
+        background: var(--clr-green);
     }
     
-    .info .info-naslov{
-        text-align: center;
-        height: 6%;
-        position: relative;
-        background: var(--clr-yellow);
-        margin-top: 0;
-    }
-    
-    .info .info-naslov h2{
-        padding-top: 10px;
-        font-family: "Work Sans",sans-serif;
-        font-size: 35px;
-        color: #fff;
-        position: relative;
-        top: 0;
-    }
-    
-    .info .kanta{
-        width: 100vw;
-        height: 94%;
-        position: relative;
-        top: 0;
-        display: flex; 
-        flex-direction: column;
-        background: var(--clr-yellow);
-    }
-
-    .info .kanta .kanta-tekst1{
+    .naslov2{
+        height: 15%;
         width: 100%;
-        height: 33.33%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2{
-        width: 97%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .naslov2 a{
+        margin: auto;
+        font-size: 40px;
     }
-
-    .info .kanta .kanta-tekst1 .kanta-tekst2 .info-tekst{
-        position: relative;
+    
+    .kontent{
+        height: 85%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
+    }
+    
+    .srediste{
         width: 100%;
         height: 90%;
-        margin: 0;
-        line-height: 16px;
-        background-color:  rgba(168, 174, 175, 0.733);
-        border-style: dashed;
-        padding: .5em 1.5em 2em 1.5em;
-        border-width: thin;
-        font-size: 12px;
-        word-wrap: break-word;
-    }
-
-    .info .kanta .kanta-projektinfo1{
-        height: 33.33%;
-        width: 100%;
-        display: flex;
-        flex-direction: column ;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info .kanta .kanta-projektinfo1 .kanta-projektinfo2 .projektinfo{
-        background-color: rgb(99, 99, 99);
-        background-image: url(/images/slide3.jpg);
-        background-position: center;
-        background-size: 56em;
-        background-blend-mode: multiply ;
-        font-weight: bold;
-        color: #fff;
-
+        margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        height: 100%;
-        width: 97%;
-        padding: 2em 0 2em 0;
-    }
-
-    .projektinfo header{
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 3px;
-        font-size: 25px;
-    }
-
-    .projektinfo p{
-        text-align: center;
         font-size: 20px;
-        line-height: 35px;
+    }
+    
+    .kucica_1{
+        height: 25%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_1 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_2{
+        height: 51%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_2 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_3{
+        height: 12%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_3 p{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .kucica_4{
+        height: 12%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .kucica_4 p{
+        margin: auto;
+        width: 100%;
     }
 
     /*-----NOVOSTI home-------*/
@@ -8528,16 +9665,12 @@ body{
         height: 450px;
         margin: 20px auto 20px auto;
         position: relative;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
         border-color: rgba(51, 50, 53, 0.25);
         word-wrap: break-word;
         cursor: pointer;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2:hover{
-        border-color: #d81677;
         background: #f48fb146;
     }
 
@@ -8553,15 +9686,16 @@ body{
         font-style: normal;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p.is{
         font-size: 15px;
         font-style: italic;
     }
 
-    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 h4 p{
+    .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica3 p{
         position: relative;
         margin-top: 7px;
         font-style: normal;
+        line-height: 20px;
     }
 
     .vijesti .sredinay .sredinax .vijestisredina .kucica2 .kucica4{
@@ -8920,130 +10054,181 @@ body{
 
     /* -------FOOTER ------------*/
 
-    footer{
+    .footer{
         width: 100%;
-        height: 1100px;
-        background: #63bcec;
-        position: relative;
+        height: 1000px;
+        background: var(--clr-yellow);
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir{
-        position: relative;
+    
+    .gore{
+        width: 100%;
+        height: 78%;
+        display: flex;
+    }
+    
+    .sredina{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        top: 0;
-    }
+        justify-content: space-between;
 
-    footer .okvir .okvirlapolapo{
-        height: unset;
-        width: 100%;
+    }
+    
+    .kutija1{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -7px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .kutija1 p{
+        font-size: 14px;
+    }
+    
+    .kutija2{
+        flex-basis: 20%;
+        border-style: solid;
+        border-width: thin;
+        -webkit-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.68);
+        padding: 15px;
+        color: black;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .kutija2 p{
+        font-size: 14px;
+    }
+    
+    .kutija3{
+        flex-basis: 35%;
+        border-style: solid;
+        border-width: thin;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 15px;
+        color: black;
+        -webkit-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: 7px -5px 18px 1px rgba(0,0,0,0.68);
+        width: 80%;
+        margin: auto;
     }
-
-    footer .okvir .kantalijevo1{
+    
+    .dio1{
         width: 100%;
-        height: unset;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2{
+    
+    .dio2{
         width: 100%;
-        height: unset;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .kantalijevo1 .kantalijevo2 .lijevo{
-        position: relative;
-        height: unset;
-        width: 90%;
+    
+    .dio2 i{
+        flex-basis: 10%;
     }
-
-    footer .okvir .okvirlapolapo .lijevo-dolje{
+    
+    .dio2 p{
+        flex-basis: 90%;
+    }
+    
+    .dio3{
         width: 100%;
-        height: unset;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-
-    footer .okvir .lijevo-dolje a{
-        height: 100%;
-        width: 90%;
-        position: relative;
-        line-height: 20px;
-    }
-
-    footer .okvir .desno{
-        position: relative;
-        top: 0;
-        width: 100%;
-        height: unset;
-    }
-
-    footer .okvir .desno .kanta-baner1{
-        height: 23%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2{
-        height: 150px;
-        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kanta-baner1 .kanta-baner2 img{
-        max-width: 100%;
+    
+    .dio3 i{
+        flex-basis: 10%;
+    }
+    
+    .dio3 p{
+        flex-basis: 90%;
+    }
+    
+    .dio4{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio4 i{
+        flex-basis: 10%;
+    }
+    
+    .dio4 p{
+        flex-basis: 90%;
+    }
+    
+    .dio5{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dio5 i{
+        flex-basis: 10%;
+    }
+    
+    .dio5 p{
+        flex-basis: 90%;
+    }
+    
+    .banercina{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
+    }
+    
+    .banercina img{
         height: auto;
-    }
-
-    footer .okvir .desno .kantap12{
-        height: unset;
-        margin: 20px 0 20px 0;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        margin: auto;
+        -webkit-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        -moz-box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
+        box-shadow: -3px -5px 18px 1px rgba(0,0,0,0.68);
     }
-
-    footer .okvir .desno .kantap12 .kantap1{
-        height: 100%;
+    
+    .dolje{
         width: 100%;
+        height: 7%;
+        background: rgba(0, 0, 0, 0.15);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
-
-    footer .okvir .desno .kantap1 .kantap2{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    footer .okvir .desno .kantap1 .kantap2 p{
-        position: relative;
-        width: 90%;
-        height: 100%;
-        line-height: 18px;
+    
+    .dolje p{
+        margin:auto;
+        color: whitesmoke;
     }
 
     /*-----NOVOSTI LANDING----*/

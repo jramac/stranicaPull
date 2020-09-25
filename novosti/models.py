@@ -22,6 +22,8 @@ class Post(models.Model):
 
     thumbBroj = models.IntegerField(default=0)
 
+    pozadinskaSlika = models.CharField(max_length=20,default="var(--clr-green)")
+
 
 
     def __str__(self):
@@ -31,6 +33,17 @@ class Post(models.Model):
 
 
 class PostImage(models.Model):
+
+    post = models.ForeignKey(Post, default=None, on_delete = models.CASCADE,null=True)
+
+    image = models.ImageField(upload_to='images/',blank=True,default='images/default.jpg')
+
+    def __str__(self):
+
+        return self.post.title
+
+
+class PostImageThumb(models.Model):
 
     post = models.ForeignKey(Post, default=None, on_delete = models.CASCADE,null=True)
 
