@@ -1609,7 +1609,7 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 175px;
+        height: auto;
         width: 100%;
         position: relative;
         top: 0;
@@ -1636,7 +1636,8 @@ body{
     .pimpek .pimpek2 .pimpek3 .kucica p{
         position: relative;
         top: 15px;
-        font-size:18px ;
+        font-size:18px;
+        margin-bottom: 20px;
     }
 
     /*---NOVOSTI DETAILS-----*/
@@ -2922,7 +2923,7 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 175px;
+        height: auto;
         width: 100%;
         position: relative;
         top: 0;
@@ -2949,7 +2950,8 @@ body{
     .pimpek .pimpek2 .pimpek3 .kucica p{
         position: relative;
         top: 15px;
-        font-size:18px ;
+        font-size:18px;
+        margin-bottom: 20px;
     }
 
     /*---NOVOSTI DETAILS-----*/
@@ -5089,7 +5091,7 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 250px;
+        height: auto;
         width: 100%;
         position: relative;
         top: 0;
@@ -5116,7 +5118,13 @@ body{
     .pimpek .pimpek2 .pimpek3 .kucica p{
         position: relative;
         top: 10px;
+        margin-bottom: 20px;
         font-size:18px ;
+    }
+
+    .pimpek .pimpek2 .pimpek3 .kucica h4{
+        font-weight: normal;
+        font-style: italic;
     }
 
     /*---NOVOSTI DETAILS-----*/
@@ -6365,7 +6373,7 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 250px;
+        height: auto;
         width: 100%;
         position: relative;
         top: 0;
@@ -6392,7 +6400,13 @@ body{
     .pimpek .pimpek2 .pimpek3 .kucica p{
         position: relative;
         top: 10px;
+        margin-bottom: 20px;
         font-size:18px ;
+    }
+
+    .pimpek .pimpek2 .pimpek3 .kucica h4{
+        font-weight: normal;
+        font-style: italic;
     }
 
     /*---NOVOSTI DETAILS-----*/
@@ -7663,7 +7677,7 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 300px;
+        height: auto;
         width: 100%;
         position: relative;
         top: 0;
@@ -7690,7 +7704,13 @@ body{
     .pimpek .pimpek2 .pimpek3 .kucica p{
         position: relative;
         top: 10px;
+        margin-bottom: 20px;
         font-size:18px ;
+    }
+
+    .pimpek .pimpek2 .pimpek3 .kucica h4{
+        font-weight: normal;
+        font-style: italic;
     }
 
     /*---NOVOSTI DETAILS-----*/
@@ -8947,7 +8967,7 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 300px;
+        height: auto;
         width: 100%;
         position: relative;
         top: 0;
@@ -8974,7 +8994,13 @@ body{
     .pimpek .pimpek2 .pimpek3 .kucica p{
         position: relative;
         top: 10px;
+        margin-bottom: 20px;
         font-size:18px ;
+    }
+
+    .pimpek .pimpek2 .pimpek3 .kucica h4{
+        font-weight: normal;
+        font-style: italic;
     }
 
     /*---NOVOSTI DETAILS-----*/
@@ -9100,23 +9126,6 @@ body{
         line-height: 40px;
         position: relative;
         top: 0;
-    }
-}
-
-@media (max-width: 380px){
-    .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 350px;
-        width: 100%;
-        position: relative;
-        top: 0;
-        margin-top: 20px;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 5px;
-        border-color: rgba(51, 50, 53, 0.25);
-        padding: 6px 50px 6px 12px;
-        word-wrap: break-word;
-        cursor: pointer;
     }
 }
 
@@ -10275,7 +10284,7 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica{
-        height: 450px;
+        height: auto;
         width: 100%;
         position: relative;
         top: 0;
@@ -10295,14 +10304,20 @@ body{
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica a{
-        font-size: 23px;
+        font-size: 25px;
         color: #175577;
     }
 
     .pimpek .pimpek2 .pimpek3 .kucica p{
         position: relative;
         top: 10px;
+        margin-bottom: 20px;
         font-size:18px ;
+    }
+
+    .pimpek .pimpek2 .pimpek3 .kucica h4{
+        font-weight: normal;
+        font-style: italic;
     }
 
     /*---NOVOSTI DETAILS-----*/
